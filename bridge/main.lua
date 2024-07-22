@@ -3,7 +3,7 @@ local config = require '@qbx_core.config.server'
 local Bridge = {}
 
 AddMoney = function(player, moneytype, amount, reason)
-    reason = reason or 'unknown'
+    reason = reason or 'Desconhecido'
     moneytype = moneytype:lower()
     amount = qbx.math.round(tonumber(amount)) --[[@as number]]
     if amount < 0 then return false end
@@ -35,7 +35,7 @@ AddMoney = function(player, moneytype, amount, reason)
 end
 
 RemoveMoney = function(player, moneytype, amount, reason)
-    reason = reason or 'unknown'
+    reason = reason or 'Desconhecido'
     moneytype = moneytype:lower()
     amount = qbx.math.round(tonumber(amount)) --[[@as number]]
     if amount < 0 then return false end
@@ -82,7 +82,7 @@ RemoveMoney = function(player, moneytype, amount, reason)
 end
 
 SetMoney = function(player, moneytype, amount, reason)
-    reason = reason or 'unknown'
+    reason = reason or 'Desconhecido'
     moneytype = moneytype:lower()
     amount = qbx.math.round(tonumber(amount)) --[[@as number]]
     if amount < 0 then return false end
