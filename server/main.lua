@@ -254,7 +254,7 @@ onMoneyChange = function(playerSrc, moneyType, amount, action, reason)
         end
     end
 end
-AddEventHandler('QBCore:Server:OnMoneyChange', onMoneyChange)
+RegisterNetEvent('QBCore:Server:OnMoneyChange', onMoneyChange)
 
 AddEventHandler('QBCore:Server:PlayerLoaded', function(player)
 	if not player then return end
